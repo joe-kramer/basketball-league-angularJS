@@ -18,12 +18,8 @@ export class PlayerService {
     this.players.push(newPlayer);
   }
 
-  getPlayerById(playerId: number) {
-  //   for(var i = 0; i <= PLAYERS.length - 1; i++) {
-  //     if (PLAYERS[i].id === playerId) {
-  //       return PLAYERS[i];
-  //     }
-  //   }
+  getPlayerById(playerId: string) {
+    return this.database.object('players/' + playerId);
   }
 
 }

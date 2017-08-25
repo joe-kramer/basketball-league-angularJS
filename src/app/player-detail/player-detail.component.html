@@ -1,6 +1,6 @@
 <div>
-  <h3>{{playerToDisplay.name}}</h3>
-  <h4>Position: {{playerToDisplay.position}}</h4>
-  <h6>Points on season: {{playerToDisplay.points}}</h6>
-  <h6>Rebounds on season: {{playerToDisplay.rebounds}}</h6>
+  <h3>{{(playerToDisplay | async).name}}</h3>
+  <h4>Position: {{(playerToDisplay | async).position}}</h4>
+  <h6>Points on season: {{(playerToDisplay | async).points}}</h6>
+  <h6>Rebounds on season: {{(playerToDisplay | async).rebounds}}</h6>
 </div>
