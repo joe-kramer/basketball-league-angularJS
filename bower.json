@@ -1,0 +1,20 @@
+{
+  "name": "basketball-league-angular",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Joe Kramer <joekramer1125@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
