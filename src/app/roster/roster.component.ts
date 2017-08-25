@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Player } from '../player.model';
 import { Router } from '@angular/router';
 import { PlayerService } from '../player.service';
+import { FirebaseListObservable } from 'angularfire2/database';
+
 
 
 @Component({
@@ -11,10 +13,10 @@ import { PlayerService } from '../player.service';
   providers: [PlayerService]
 })
 export class RosterComponent implements OnInit {
-  players: Player[];
+  players: FirebaseListObservable<any[]>;
 
   goToPlayerPage(clickedPlayer: Player) {
-    this.router.navigate(['players', clickedPlayer.id]);
+    // this.router.navigate(['players', clickedPlayer.id]);
   }
 
   constructor(private router: Router, private playerService: PlayerService) { }

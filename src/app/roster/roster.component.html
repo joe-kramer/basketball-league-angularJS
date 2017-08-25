@@ -1,6 +1,6 @@
 <h2>Roster</h2>
 
-<div *ngFor="let player of players" (click)="goToPlayerPage(player)" class="panel panel-default">
+<div *ngFor="let player of players | async" (click)="goToPlayerPage(player)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{player.name}}</em></h3><br>
     <h6>Position: {{player.position}}</h6>
