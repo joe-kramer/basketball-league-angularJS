@@ -1,0 +1,26 @@
+{ "players": [{
+  "name": "Joe Kramer",
+  "position": "PF",
+  "points": "25",
+  "rebounds": "10",
+  "id": "1"
+}, {
+  "name": "Aaron Hanan",
+  "position": "PG",
+  "points": "17",
+  "rebounds": "5",
+  "id": "2"
+}, {
+  "name": "Max Tilden",
+  "position": "C",
+  "points": "8",
+  "rebounds": "14",
+  "id": "3"
+}, {
+  "name": "Drew Moreland",
+  "position": "SG",
+  "points": "5",
+  "rebounds": "7",
+  "id": "4"
+}]
+}
