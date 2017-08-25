@@ -27,4 +27,8 @@ export class PlayerService {
     playerEntryInFirebase.update({name: localUpdatedPlayer.name, position: localUpdatedPlayer.position, points: localUpdatedPlayer.points, rebounds: localUpdatedPlayer.rebounds,});
   }
 
+  deletePlayer(localPlayerToDelete) {
+    var playerEntry = this.getPlayerById(localPlayerToDelete.$key);
+    playerEntry.remove();
+  }
 }
