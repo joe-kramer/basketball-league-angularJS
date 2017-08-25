@@ -1,0 +1,19 @@
+<h4>Edit Player</h4>
+
+<label>New Name:</label>
+<input [(ngModel)]="selectedPlayer.name">
+<br>
+
+<label>New Position:</label>
+<input [(ngModel)]="selectedPlayer.position">
+<br>
+
+<label>New total Points:</label>
+<input [(ngModel)]="selectedPlayer.points">
+<br>
+
+<label>New total Rebounds:</label>
+<input [(ngModel)]="selectedPlayer.rebounds">
+<br>
+
+<button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>

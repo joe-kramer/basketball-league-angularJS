@@ -14,6 +14,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class RosterComponent implements OnInit {
   players: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   goToPlayerPage(clickedPlayer) {
     this.router.navigate(['players', clickedPlayer.$key]);
